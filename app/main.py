@@ -9,6 +9,15 @@ from app.responses import (
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {
+        "service": "Meter Confirmation Service",
+        "status": "running",
+        "docs": "/docs",
+        "example": "/confirm-meter/12345"
+    }
+
 @app.post("/meter/confirm/")
 async def confirm_meter(request: Request):
     try:
@@ -40,3 +49,4 @@ async def confirm_meter(request: Request):
     except Exception:
         # Any parsing error or unexpected issue → invalid format fault
         return Response(content=soap_fault_invalid_format(), media_type="text/xml")
+

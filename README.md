@@ -163,5 +163,34 @@ You can also use:
 ### Render
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Prince1989/meter-confirmation-service)
 
+# Meter Confirmation Service
+
+Deployed on Render:  
+👉 **https://meter-confirmation-service.onrender.com/**
+
+---
+
+## Endpoints
+
+- `/` → Health check & service info  
+- `/confirm-meter/{meter_id}` → Confirm a meter by ID  
+  - Example: [https://meter-confirmation-service.onrender.com/confirm-meter/12345](https://meter-confirmation-service.onrender.com/confirm-meter/12345)
+- `/docs` → Interactive Swagger UI (test endpoints directly in the browser)
+
+---
+
+## How to Test
+
+1. Open the base URL:  
+   [https://meter-confirmation-service.onrender.com/](https://meter-confirmation-service.onrender.com/)  
+   You should see service info.
+
+2. Try a confirmation:  
+   [https://meter-confirmation-service.onrender.com/confirm-meter/12345](https://meter-confirmation-service.onrender.com/confirm-meter/12345)  
+   → Returns `{"meter_id":"12345","confirmed":true}`
+
+3. Explore all endpoints via Swagger UI:  
+   [https://meter-confirmation-service.onrender.com/docs](https://meter-confirmation-service.onrender.com/docs)
+
 
 ✅ This README includes everything required to **run and test** the project immediately.
