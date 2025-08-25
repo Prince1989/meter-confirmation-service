@@ -133,7 +133,7 @@ my-soap-service/
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/my-soap-service.git
+   git clone https://github.com/Prince1989/meter-confirmation-service.git
    cd my-soap-service
    ```
 
@@ -158,5 +158,10 @@ You can also use:
 - **Swagger UI** at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ---
+## 🚀 One-Click Deploy
+
+### Render
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Prince1989/meter-confirmation-service)
+
 
 ✅ This README includes everything required to **run and test** the project immediately.
