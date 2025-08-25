@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Body>
+    <ns0:confirmMeterReq xmlns:ns0="http://www.nrs.eskom.co.za/xmlvend/meter/2.1/schema">
+      <ns0:idMethod>
+        <ns4:meterIdentifier xmlns:ns4="http://www.nrs.eskom.co.za/xmlvend/base/2.1/schema"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             msno="01234567891"
+                             xsi:type="ns4:MeterNumber"/>
+      </ns0:idMethod>
+    </ns0:confirmMeterReq>
+  </soap-env:Body>
+</soap-env:Envelope>
